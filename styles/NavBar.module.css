@@ -1,0 +1,50 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #000;
+  height: 8vh;
+}
+
+.nav_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.nav_container h2 {
+  cursor: pointer;
+}
+
+.nav_container h2:hover {
+  cursor: pointer;
+  transform: scale(106%);
+  transition: 0.2s ease-in-out;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.7rem;
+}
+
+.links ul li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.links ul li:hover {
+  transform: scale(118%);
+  transition: 0.2s ease-in-out;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: nowrap;
+}
