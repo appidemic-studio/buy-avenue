@@ -1,0 +1,14 @@
+.cart {
+  height: 90vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart button {
+  font-size: 1.2rem;
+}

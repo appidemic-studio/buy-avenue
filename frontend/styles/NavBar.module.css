@@ -3,52 +3,105 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #000;
-  height: 13vh;
+  height: 10rem;
+  font-family: 'Cinzel', serif;
 }
 
 .nav_container {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-}
-
-.nav_container h2 {
-  cursor: pointer;
-}
-
-.nav_container h2:hover {
-  cursor: pointer;
-  transform: scale(106%);
-  transition: 0.2s ease-in-out;
-}
-
-.links ul {
+  width: 80%;
   display: flex;
   justify-content: space-around;
-  gap: 3rem;
+  align-items: center;
 }
 
-.links ul li {
+.logo img {
   cursor: pointer;
-  font-weight: bold;
 }
 
-.links ul li:hover {
-  transform: scale(118%);
-  transition: 0.2s ease-in-out;
+.menu {
+  display: flex;
+  gap: 4rem;
+}
+
+.menu li {
+  font-weight: 800;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: 1px solid #f2f2f2;
+  padding: 0.4rem 0.8rem;
+}
+
+.menu li:hover {
+  border: 1px solid #000;
+  transition: 0.4s ease-in-out;
 }
 
 .links {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  align-items: center;
-  flex-wrap: nowrap;
+  font-size: 1.5rem;
+  margin-top: 3px;
+  cursor: pointer;
 }
 
-#profile li {
-  font-size: 1.3rem;
+.links:hover {
+  transform: scale(110%);
+  transition: 0.2s ease-in-out;
+}
+
+.hambg {
+  display: none;
+}
+
+.categories {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  flex-direction: column;
+  background-color: #000;
+  width: 250px;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+}
+
+.none {
+  display: none;
+}
+
+.product_list {
+  position: relative;
+}
+
+@media (max-width: 1570px) {
+  .menu {
+    display: none;
+  }
+
+  .nav_container {
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .nav {
+    height: 9rem;
+  }
+
+  .hambg {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .logo img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 927px) {
+  .nav_container {
+    width: 93%;
+  }
 }

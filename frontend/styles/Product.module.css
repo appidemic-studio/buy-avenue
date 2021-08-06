@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  margin: 3rem auto;
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image_area {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.image_area img {
+  width: 600px;
+  height: 600px;
+}
+.text_area {
+  margin: 3rem 0;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  border-left: 1px solid #b2b2b2;
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text_container p {
+  font-size: 1.3rem;
+}
+
+.text_container h1 {
+  font-family: 'Cinzel', serif;
+}
+
+.text_container span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}

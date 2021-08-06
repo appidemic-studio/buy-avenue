@@ -1,8 +1,7 @@
 .container {
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 3rem auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -12,30 +11,102 @@
 }
 
 .products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .product {
-  height: 35rem;
-  padding: 1rem 0;
+  cursor: pointer;
+  position: relative;
+  margin: 1rem;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
+  border-radius: 10px;
+  box-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+  transform: scale(105%);
+  transition: 0.3s ease-in-out;
+}
+
+.img_area {
+  display: flex;
+}
+
+.img_area img {
+  height: 200px;
+  width: 200px;
+}
+
+.text_area {
+  background-color: #ebebeb;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text_area span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.text_area h3 {
+  font-size: 1rem;
+  width: 300px;
+  text-align: center;
 }
 
 .product p span {
   text-decoration: line-through;
 }
 
-.buttons button {
-  font-size: 1rem;
+.product p {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons span {
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  background-color: #fff;
+  width: 165px;
+  padding: 0.7rem 0.3rem;
+  justify-content: center;
+  gap: 0.8rem;
+  border-radius: 10px;
 }
 
 .buttons {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
+}
+
+.like {
+  position: absolute;
+  top: 10px;
+  right: 13px;
+  font-size: 1.3rem;
+  cursor: pointer;
 }

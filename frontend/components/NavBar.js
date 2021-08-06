@@ -1,44 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from '../styles/NavBar.module.css';
 import Link from 'next/link';
-import { AiOutlineShoppingCart, AiOutlineUser } from 'react-icons/ai';
+import {
+  AiOutlineShoppingCart,
+  AiOutlineUser,
+  AiOutlineAlignRight,
+} from 'react-icons/ai';
 
 const NavBar = () => {
   return (
     <div className={style.nav}>
       <div className={style.nav_container}>
-        {/*Logo*/}
-        <Link href="/">
-          <h2>Aesthetic Indian.</h2>
-        </Link>
-        <div className={style.links}>
-          {/*Menu*/}
-          <ul>
-            <Link href="/">
-              <li>Home</li>
-            </Link>
-            <Link href="/products">
-              <li>Products</li>
-            </Link>
-            <Link href="/contact">
-              <li>Contact Us</li>
-            </Link>
-          </ul>
-
-          {/*Account & Cart*/}
-          <ul id={style.profile}>
-            <Link href="/user">
-              <li>
-                <AiOutlineUser />
-              </li>
-            </Link>
-            <Link href="/cart">
-              <li>
-                <AiOutlineShoppingCart />
-              </li>
-            </Link>
-          </ul>
+        <ul className={style.menu}>
+          <Link href="/products">
+            <li className={style.product_list}>ALL PRODUCTS</li>
+          </Link>
+          <Link href="/blogs">
+            <li>BLOGS</li>
+          </Link>
+        </ul>
+        <div className={style.logo}>
+          <Link href="/">
+            <img src="/Logo.png" alt="Aesthetic Indian" />
+          </Link>
         </div>
+        <div className={style.hambg}>
+          <AiOutlineAlignRight />
+        </div>
+        <ul className={style.menu}>
+          <Link href="/about">
+            <li>ABOUT</li>
+          </Link>
+          <Link href="/contact-us">
+            <li>CONTACT US</li>
+          </Link>
+          <Link href="/user">
+            <AiOutlineUser className={style.links} />
+          </Link>
+          <Link href="/user/cart">
+            <AiOutlineShoppingCart className={style.links} />
+          </Link>
+        </ul>
       </div>
     </div>
   );
